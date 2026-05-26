@@ -57,6 +57,14 @@ export default function Sidebar() {
                         </NavLink>
                     </li>
 
+                    {/* COMPONENTS */}
+                    <li>
+                        <NavLink to="/FiturXyz" id="menu-5" className={({ isActive }) => `${menuClass} ${isActive ? activeClass : ""}`}>
+                            <MdListAlt className="mr-4 text-xl" />
+                            Fitur-coba-xyz
+                        </NavLink>
+                    </li>
+
                     {/* ERROR PAGES */}
                     <li>
                         <a href="/error-400" className={menuClass}>

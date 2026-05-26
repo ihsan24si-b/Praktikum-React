@@ -9,6 +9,7 @@ import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Components from "./pages/Components";
 import ErrorPage from "./pages/ErrorPage";
+import FiturXyz from './pages/FiturXyz';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
                     <Route path="/products" element={<Products />} />
                     <Route path="/products/:id" element={<ProductDetail />} />
                     <Route path="/components" element={<Components />} />
+                    <Route path="/fiturxyz" element={<FiturXyz />} />
                     
                     {/* Error Routes */}
                     <Route path="/error-400" element={<ErrorPage code="400" title="Bad Request" description="Permintaan tidak dapat diproses oleh server." image="https://illustrations.popsy.co/gray/falling.svg" />} />
